@@ -31,18 +31,18 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 
 price = 0
 if size.upper() == "S":
-    price = 15
+    price += 15
     # print(f"It's small, Your bill is: ${price}.")
     if add_pepperoni.upper() == "Y":
         price += 2
         # print(f"Add pepperoni to small, Your bill is: ${price}.")
 
 elif size.upper() == "M":
-    price = 20
+    price += 20
     # print(f"It's medium, Your bill is: ${price}.")
 
 elif size.upper() == "L":
-    price = 25
+    price += 25
     # print(f"It's large, Your bill is: ${price}.")
 
 if add_pepperoni.upper() == "Y":
